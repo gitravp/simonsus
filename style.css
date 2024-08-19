@@ -1,0 +1,46 @@
+body{
+    background-image: url("assets/erased_cropped_background_img.jpg");
+    font-family: "Silkscreen", sans-serif;
+}
+
+.centerit{display: flex;justify-content: center;align-items: center;}
+
+.game-head>h1{color:#22163e}
+
+.game-body{
+    display: grid;grid-template-columns: 1fr 1fr 1fr;
+    /*#fd519b;#22163e  #f8da9d  #862f7e*/
+    background-color: #39185d ;
+    border: 3px solid #22163e;
+    border-radius: 5px;
+    width:300px;height: 300px;
+}
+/*.game-body > button*/
+button.game-button{
+    font-family: "Silkscreen", sans-serif;
+    background-color:  #862f7e;
+    width: 80%;height: 80%;
+    border: 3px solid #f75c3b ;
+    border-radius: 5px;
+    margin-top:10%;margin-left: 10%;
+}
+
+.start-button{
+    font-family: "Silkscreen", sans-serif;
+    background-color:  #862f7e;
+    width: 300px;height: 40px;
+    border: 3px solid #f75c3b ;
+    border-radius: 30px;
+    margin:15px;
+}
+
+button.game-button.clicked{background-color: #f8da9d;}
+button.game-button.clicked-right{background-color:#f8da9d;border-color:green;} 
+button.game-button.clicked-wrong{background-color: #fa770a;border-color:red;}
+
+.level>h2{
+    color:#22163e;
+    margin:20px;
+}
+
+/*.game-head{}*/
