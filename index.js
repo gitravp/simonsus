@@ -93,6 +93,9 @@ for(i=0;i<buttons.length;i++){
             //button deactivated when displaying sequence
         }
         else{
+            if('vibrate'in navigator){
+                navigator.vibrate(100);
+            }
             entered_seq.push(parseInt(this.id.slice(1)));
             for(i=0;i<entered_seq.length;i++){
                 if(entered_seq[i]!=seq[i]){
@@ -110,6 +113,9 @@ for(i=0;i<buttons.length;i++){
 
 //Start button listener
 $(restart).click(function(){
+        if('vibrate'in navigator){
+                navigator.vibrate(100);
+            }
         entered_seq=[];
         seq=[];
         gameover=0;
